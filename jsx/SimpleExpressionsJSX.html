@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+        <style>
+            .my-list{
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="my-react-app"></div>
+        <script type="text/babel">
+            const orage_str = "Orange";
+            const apple_str = "Apple";
+            const banana_str = "Banana";
+            ReactDOM.render(
+                <div>
+                    <div key="el-key" className="my-list" >Some of my favoutie frutes</div>
+                    <ol>
+                        <li key="O-key">{orage_str}</li>
+                        <li key="B-key">{banana_str}</li>
+                        <li key="A-key">{apple_str}</li>
+                    </ol>
+                </div>,
+                document.getElementById('my-react-app')
+            );
+        </script>
+    </body>
+</html>
